@@ -1,6 +1,6 @@
 # KoenderColor
 
-A Wolfram Language paclet implementing the empirical three-dimensional metric field for color space described by Jan Koenderink, Andrea van Doorn, Doris I. Braun, and Karl R. Gegenfurtner (2026).
+A Wolfram Language paclet implementing the empirical three-dimensional metric field for color space described by  Koenderink, van Doorn, Braun, and  Gegenfurtner (2026).
 
 <p align="center">
   <img src="assets/preview.png" width="480" alt="KoenderColor Empirical 3D Metric Field" />
@@ -110,6 +110,9 @@ To rebuild all documentation notebooks from source symbol usages, run:
 ```bash
 wolframscript -file scripts/generate_docs.wl
 ```
+## ToDo
+
+- At some point, we should just implement this as a `ColorDistance` method in the Wolfram Language core, so that it can be used seamlessly with built-in functions like `Nearest`, `FindClusters`, and `ImageDistance`. For now, the paclet provides a standalone implementation.
 
 ## Reference
 
