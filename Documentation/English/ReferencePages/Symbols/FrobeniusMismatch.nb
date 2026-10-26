@@ -1,0 +1,160 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 15.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      5524,        151]
+NotebookOptionsPosition[      3320,        104]
+NotebookOutlinePosition[      4175,        128]
+CellTagsIndexPosition[      4132,        125]
+WindowTitle->FrobeniusMismatch
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["KoenderColor`", "ContextNameCell",ExpressionUUID->"aa344e38-ed65-405f-a450-e52344a96ca3"],
+
+Cell[CellGroupData[{
+
+Cell["FrobeniusMismatch", "ObjectName",ExpressionUUID->"350282f5-cb7c-4c66-8e54-1a3f7ede936f"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"FrobeniusMismatch", "[", 
+       RowBox[{
+        StyleBox["S", "TI"], ",", 
+        StyleBox["T", "TI"]}], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "583c15cb-a263-481e-99a4-8c7c3027548f"],
+     "\[LineSeparator]",
+     "computes the normalized Frobenius mismatch ||S - T||_F / (||S||_F + \
+||T||_F) between two matrices."
+    }],ExpressionUUID->"baa83e71-0617-4053-9426-facb274e7439"]}
+  }]], "Usage",
+ CellID->982511436,ExpressionUUID->"4a1a544e-4b51-4a2d-af1d-7bb6f39b59f5"],
+
+Cell[CellGroupData[{
+
+Cell["Details and Options", "NotesSection",ExpressionUUID->"5bfec03b-01d1-44e1-8480-9ad1fb3b8c75"],
+
+Cell["FrobeniusMismatch has no options.", "Notes",ExpressionUUID->"02d4cd19-1591-41e8-9ade-09171981e505"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Examples", "PrimaryExamplesSection",ExpressionUUID->"316a5d7e-d886-4d99-a5f4-39c438129c9d"],
+
+Cell[CellGroupData[{
+
+Cell["Basic Examples", "ExampleSection",ExpressionUUID->"3bcdeff8-9ac8-4de5-adeb-232b6ea5afb0"],
+
+Cell["Load the KoenderColor package:", "ExampleText",ExpressionUUID->"fa398563-4b8b-45a5-b39e-1591bb0af741"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<KoenderColor`\>\"", "]"}]], "Input",ExpressionUUID->"9bdf9e86-2f1b-42ae-88c6-1305d594cef1"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",ExpressionUUID->"89596bf3-e426-4056-9d4c-93c2e81f4dc8"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["KoenderinkData"]], "paclet:KoenderColor/ref/KoenderinkData"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "af6f7279-ef1e-4051-928e-22ca02009b33"],
+ " \[FilledSmallSquare] ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["KoenderinkWeights"]], 
+    "paclet:KoenderColor/ref/KoenderinkWeights"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "709e04d2-78c3-41d1-8bd3-20628ca5c7d8"]
+}], "SeeAlso",ExpressionUUID->"d23835eb-c7c9-495a-b3a2-619d1b21d1bd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "MoreAboutSection",ExpressionUUID->"cababfef-10de-4087-8f6c-d4161467afc8"],
+
+Cell[TextData[Cell[BoxData[
+ TemplateBox[{
+   Cell[
+    TextData["KoenderColor Guide"]], "paclet:KoenderColor/guide/KoenderColor"},
+  "RefLink",
+  BaseStyle->{
+   "MoreAbout"}]],ExpressionUUID->"34621554-c2b4-4ed2-b305-f6be36261962"]], \
+"MoreAbout",ExpressionUUID->"b716b81a-afda-46f6-ab5f-4570021b13b2"]
+}, Open  ]]
+}, Open  ]]
+},
+ScreenStyleEnvironment->"Working",
+WindowTitle->"FrobeniusMismatch",
+TaggingRules-><|
+ "Metadata" -> <|
+   "context" -> "KoenderColor`", "type" -> "Symbol", "paclet" -> 
+    "KoenderColor", "language" -> "en", "title" -> "FrobeniusMismatch", 
+    "windowtitle" -> "FrobeniusMismatch", "uri" -> 
+    "KoenderColor/ref/FrobeniusMismatch", "summary" -> 
+    "FrobeniusMismatch[S, T] computes the normalized Frobenius mismatch ||S - \
+T||_F / (||S||_F + ||T||_F) between two matrices.", "index" -> True|>|>,
+FrontEndVersion->"15.0 for Mac OS X ARM (64-bit) (July 2, 2026)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb"],
+ExpressionUUID->"5e82b095-72a2-4833-aef9-19bc7f07d7ba"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[585, 21, 95, 0, 70, "ContextNameCell",ExpressionUUID->"aa344e38-ed65-405f-a450-e52344a96ca3"],
+Cell[CellGroupData[{
+Cell[705, 25, 94, 0, 70, "ObjectName",ExpressionUUID->"350282f5-cb7c-4c66-8e54-1a3f7ede936f"],
+Cell[802, 27, 601, 14, 70, "Usage",ExpressionUUID->"4a1a544e-4b51-4a2d-af1d-7bb6f39b59f5",
+ CellID->982511436],
+Cell[CellGroupData[{
+Cell[1428, 45, 98, 0, 70, "NotesSection",ExpressionUUID->"5bfec03b-01d1-44e1-8480-9ad1fb3b8c75"],
+Cell[1529, 47, 105, 0, 70, "Notes",ExpressionUUID->"02d4cd19-1591-41e8-9ade-09171981e505"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1671, 52, 97, 0, 70, "PrimaryExamplesSection",ExpressionUUID->"316a5d7e-d886-4d99-a5f4-39c438129c9d"],
+Cell[CellGroupData[{
+Cell[1793, 56, 95, 0, 70, "ExampleSection",ExpressionUUID->"3bcdeff8-9ac8-4de5-adeb-232b6ea5afb0"],
+Cell[1891, 58, 108, 0, 70, "ExampleText",ExpressionUUID->"fa398563-4b8b-45a5-b39e-1591bb0af741"],
+Cell[2002, 60, 133, 1, 70, "Input",ExpressionUUID->"9bdf9e86-2f1b-42ae-88c6-1305d594cef1"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2184, 67, 89, 0, 70, "SeeAlsoSection",ExpressionUUID->"89596bf3-e426-4056-9d4c-93c2e81f4dc8"],
+Cell[2276, 69, 574, 17, 70, "SeeAlso",ExpressionUUID->"d23835eb-c7c9-495a-b3a2-619d1b21d1bd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2887, 91, 97, 0, 70, "MoreAboutSection",ExpressionUUID->"cababfef-10de-4087-8f6c-d4161467afc8"],
+Cell[2987, 93, 305, 7, 70, "MoreAbout",ExpressionUUID->"b716b81a-afda-46f6-ab5f-4570021b13b2"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

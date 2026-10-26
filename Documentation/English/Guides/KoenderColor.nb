@@ -1,0 +1,256 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 15.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      9129,        247]
+NotebookOptionsPosition[      6238,        194]
+NotebookOutlinePosition[      7043,        218]
+CellTagsIndexPosition[      7000,        215]
+WindowTitle->KoenderColor Guide
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Categorization", "CategorizationSection",ExpressionUUID->"adfd51b0-a9a7-46bb-ace6-163c4a65fa63"],
+
+Cell["Guide", "Categorization",
+ CellLabel->
+  "Entity Type",ExpressionUUID->"9dbccb79-f1e1-40ef-9f73-0442a779e845"],
+
+Cell["KoenderColor", "Categorization",
+ CellLabel->
+  "Paclet Name",ExpressionUUID->"4923acd7-4727-41c3-b79a-503814e117c3"],
+
+Cell["KoenderColor`", "Categorization",
+ CellLabel->"Context",ExpressionUUID->"96c94e66-103b-45b9-9b4a-8f52a31b9e65"],
+
+Cell["KoenderColor/guide/KoenderColor", "Categorization",
+ CellLabel->"URI",ExpressionUUID->"73cb2249-62b1-44bc-a35c-72b65299f2df"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["KoenderColor Guide", "GuideTitle",ExpressionUUID->"f552eb68-6acc-4bbb-9080-60ae09975d9a"],
+
+Cell["\<\
+KoenderColor provides tools for analyzing and computing color differences \
+using the 3D empirical metric field developed by Jan Koenderink, Andrea van \
+Doorn, Doris Braun, and Karl Gegenfurtner (2026).\
+\>", "GuideAbstract",ExpressionUUID->"b4f728c4-8e8b-47ce-8f5d-4c1b897eaa1c"],
+
+Cell[CellGroupData[{
+
+Cell["Reference", "GuideReferenceSection",ExpressionUUID->"83d5aa9f-661c-47c8-8448-2d25498fd36d"],
+
+Cell[CellGroupData[{
+
+Cell["Metric & Color Distance", "GuideFunctionsSubsection",ExpressionUUID->"4cb0cb68-632c-4093-91f8-42698377c6d5"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["KoenderinkColorDistance"]], 
+    "paclet:KoenderColor/ref/KoenderinkColorDistance"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "615fcdc2-eb15-4da4-92f0-09ba618e3210"],
+ " \[LongDash] ",
+ "Computes the perceptual color distance between colors c1 and c2 in units of \
+Notable Qualitative Differences (NQD)."
+}], "GuideText",ExpressionUUID->"07bd7fe0-e795-49e5-9483-5eb6850918da"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["KoenderinkMetricMatrix"]], 
+    "paclet:KoenderColor/ref/KoenderinkMetricMatrix"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "5969bbb9-b1b3-4a47-a397-76cd7a4a1b09"],
+ " \[LongDash] ",
+ "Computes the interpolated 3x3 symmetric positive-definite Sigma matrix at \
+color."
+}], "GuideText",ExpressionUUID->"ada3447f-0089-40b2-b03e-a3d61fb47e34"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["KoenderinkMetricTensor"]], 
+    "paclet:KoenderColor/ref/KoenderinkMetricTensor"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "f227bdf5-fda9-4a81-a4c4-6877229471b6"],
+ " \[LongDash] ",
+ "Returns the Riemannian metric tensor g(color) = \
+Inverse[KoenderinkMetricMatrix[color]]."
+}], "GuideText",ExpressionUUID->"2d143c84-aafd-4704-ae42-6f54a2edf061"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["KoenderinkEllipsoid"]], 
+    "paclet:KoenderColor/ref/KoenderinkEllipsoid"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "0fa66358-25f1-436e-832b-dd88ba4326d0"],
+ " \[LongDash] ",
+ "Returns a Graphics3D Ellipsoid primitive representing the Notable \
+Qualitative Difference (NQD) region at color."
+}], "GuideText",ExpressionUUID->"9fcd02c7-2557-4944-ba97-fe963f591949"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Empirical Lattice Data & Interpolation", "GuideFunctionsSubsection",ExpressionUUID->"2a0be6d8-4797-4a7c-b963-573055da3390"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["KoenderinkData"]], "paclet:KoenderColor/ref/KoenderinkData"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "0b15426a-e1f9-419d-9938-35e39415ffee"],
+ " \[LongDash] ",
+ "Returns the empirical dataset of 35 reference colors and fitted Sigma \
+matrices from Koenderink et al."
+}], "GuideText",ExpressionUUID->"5288e071-c68d-40bc-80e4-7e69553ea072"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["KoenderinkWeights"]], 
+    "paclet:KoenderColor/ref/KoenderinkWeights"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "7de9ebd5-06cb-4748-96f0-ab29b8d20e77"],
+ " \[LongDash] ",
+ "Computes the partition-of-unity Gaussian RBF weights for the 35 empirical \
+reference points."
+}], "GuideText",ExpressionUUID->"0b0c4ff0-7cf1-4070-952b-186793307a48"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["FrobeniusMismatch"]], 
+    "paclet:KoenderColor/ref/FrobeniusMismatch"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "1ecd3b32-cd3e-4018-a45d-154036bdd835"],
+ " \[LongDash] ",
+ "Computes the normalized Frobenius mismatch ||S - T||_F / (||S||_F + \
+||T||_F) between two matrices."
+}], "GuideText",ExpressionUUID->"67db92b8-bbb0-4976-a608-bb7b7477bb0e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Color Coordinate Conversions", "GuideFunctionsSubsection",ExpressionUUID->"01e1ef77-9bf2-48fb-a9d1-e5916203ab7a"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["sRGBToLinearRGB"]], "paclet:KoenderColor/ref/sRGBToLinearRGB"},
+   
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "3f95b2be-77d7-4daf-8423-212139af30f7"],
+ " \[LongDash] ",
+ "Converts gamma-encoded sRGB coordinates in [0, 1] to linear RGB."
+}], "GuideText",ExpressionUUID->"b5a97f2b-074a-4b30-935a-e505692194c1"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["LinearRGBTosRGB"]], "paclet:KoenderColor/ref/LinearRGBTosRGB"},
+   
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "ee8f1896-9086-47d8-9d93-0bdb866dd257"],
+ " \[LongDash] ",
+ "Converts linear RGB coordinates in [0, 1] to gamma-encoded sRGB."
+}], "GuideText",ExpressionUUID->"f69cfe35-3877-4ace-9425-6e98f663b9ae"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+ScreenStyleEnvironment->"Working",
+WindowTitle->"KoenderColor Guide",
+TaggingRules-><|
+ "Metadata" -> <|
+   "context" -> "KoenderColor`", "type" -> "Guide", "paclet" -> 
+    "KoenderColor", "language" -> "en", "title" -> "KoenderColor Guide", 
+    "windowtitle" -> "KoenderColor Guide", "uri" -> 
+    "KoenderColor/guide/KoenderColor", "summary" -> 
+    "Empirical 3D metric field for color space after Koenderink et al. \
+(2026).", "index" -> True|>|>,
+FrontEndVersion->"15.0 for Mac OS X ARM (64-bit) (July 2, 2026)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb"],
+ExpressionUUID->"5e82b095-72a2-4833-aef9-19bc7f07d7ba"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[608, 23, 102, 0, 70, "CategorizationSection",ExpressionUUID->"adfd51b0-a9a7-46bb-ace6-163c4a65fa63"],
+Cell[713, 25, 116, 2, 70, "Categorization",ExpressionUUID->"9dbccb79-f1e1-40ef-9f73-0442a779e845"],
+Cell[832, 29, 123, 2, 70, "Categorization",ExpressionUUID->"4923acd7-4727-41c3-b79a-503814e117c3"],
+Cell[958, 33, 117, 1, 70, "Categorization",ExpressionUUID->"96c94e66-103b-45b9-9b4a-8f52a31b9e65"],
+Cell[1078, 36, 131, 1, 70, "Categorization",ExpressionUUID->"73cb2249-62b1-44bc-a35c-72b65299f2df"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1246, 42, 95, 0, 70, "GuideTitle",ExpressionUUID->"f552eb68-6acc-4bbb-9080-60ae09975d9a"],
+Cell[1344, 44, 291, 4, 70, "GuideAbstract",ExpressionUUID->"b4f728c4-8e8b-47ce-8f5d-4c1b897eaa1c"],
+Cell[CellGroupData[{
+Cell[1660, 52, 97, 0, 70, "GuideReferenceSection",ExpressionUUID->"83d5aa9f-661c-47c8-8448-2d25498fd36d"],
+Cell[CellGroupData[{
+Cell[1782, 56, 114, 0, 70, "GuideFunctionsSubsection",ExpressionUUID->"4cb0cb68-632c-4093-91f8-42698377c6d5"],
+Cell[1899, 58, 474, 12, 70, "GuideText",ExpressionUUID->"07bd7fe0-e795-49e5-9483-5eb6850918da"],
+Cell[2376, 72, 438, 12, 70, "GuideText",ExpressionUUID->"ada3447f-0089-40b2-b03e-a3d61fb47e34"],
+Cell[2817, 86, 445, 12, 70, "GuideText",ExpressionUUID->"2d143c84-aafd-4704-ae42-6f54a2edf061"],
+Cell[3265, 100, 463, 12, 70, "GuideText",ExpressionUUID->"9fcd02c7-2557-4944-ba97-fe963f591949"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3765, 117, 129, 0, 70, "GuideFunctionsSubsection",ExpressionUUID->"2a0be6d8-4797-4a7c-b963-573055da3390"],
+Cell[3897, 119, 438, 11, 70, "GuideText",ExpressionUUID->"5288e071-c68d-40bc-80e4-7e69553ea072"],
+Cell[4338, 132, 439, 12, 70, "GuideText",ExpressionUUID->"0b0c4ff0-7cf1-4070-952b-186793307a48"],
+Cell[4780, 146, 446, 12, 70, "GuideText",ExpressionUUID->"67db92b8-bbb0-4976-a608-bb7b7477bb0e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5263, 163, 119, 0, 70, "GuideFunctionsSubsection",ExpressionUUID->"01e1ef77-9bf2-48fb-a9d1-e5916203ab7a"],
+Cell[5385, 165, 405, 11, 70, "GuideText",ExpressionUUID->"b5a97f2b-074a-4b30-935a-e505692194c1"],
+Cell[5793, 178, 405, 11, 70, "GuideText",ExpressionUUID->"f69cfe35-3877-4ace-9425-6e98f663b9ae"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

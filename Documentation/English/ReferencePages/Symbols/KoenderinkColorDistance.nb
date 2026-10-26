@@ -1,0 +1,197 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 15.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      7162,        188]
+NotebookOptionsPosition[      4795,        139]
+NotebookOutlinePosition[      5706,        164]
+CellTagsIndexPosition[      5663,        161]
+WindowTitle->KoenderinkColorDistance
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["KoenderColor`", "ContextNameCell",ExpressionUUID->"7b46b2a6-4679-4868-ad13-c5d7a3a7d587"],
+
+Cell[CellGroupData[{
+
+Cell["KoenderinkColorDistance", "ObjectName",ExpressionUUID->"f9619469-e95e-4ab4-8e0d-6006480ed044"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"KoenderinkColorDistance", "[", 
+       RowBox[{
+        StyleBox["c1", "TI"], ",", 
+        StyleBox["c2", "TI"], ",", 
+        StyleBox["opts", "TI"]}], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "30718116-10fd-4b34-8b4a-9e40f1bd5353"],
+     "\[LineSeparator]",
+     "computes the perceptual color distance between colors c1 and c2 in \
+units of Notable Qualitative Differences (NQD)."
+    }],ExpressionUUID->"2f58d795-272d-48ab-88c2-66e04c19ff54"]}
+  }]], "Usage",
+ CellID->982511436,ExpressionUUID->"aa208e59-7d47-4615-b30c-378d60ceb35e"],
+
+Cell[CellGroupData[{
+
+Cell["Details and Options", "NotesSection",ExpressionUUID->"22c0f818-3603-4aed-8089-a3470edf989b"],
+
+Cell["The following options can be given:", "Notes",ExpressionUUID->"4b4e7de0-d985-42ad-992c-4fb3098e1bce"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[BoxData[
+     StyleBox["Method", "InlineFormula"]],ExpressionUUID->
+     "671284cb-32ad-4e0d-9dee-db29b90d421c"], Cell[BoxData[
+     StyleBox["Midpoint", "InlineFormula"]],ExpressionUUID->
+     "8cde10aa-9d0c-4957-9e41-bc732f478983"]},
+   {"", Cell[BoxData[
+     StyleBox["ColorSpace", "InlineFormula"]],ExpressionUUID->
+     "610bf223-fc28-485f-9598-8926372cb7d5"], Cell[BoxData[
+     StyleBox["sRGB", "InlineFormula"]],ExpressionUUID->
+     "b5b0312c-e498-418d-a96a-d73feae30c08"]},
+   {"", Cell[BoxData[
+     StyleBox["Bandwidth", "InlineFormula"]],ExpressionUUID->
+     "c510ce16-9ecb-4174-9c6f-8fc3e0289a54"], Cell[BoxData[
+     StyleBox["Automatic", "InlineFormula"]],ExpressionUUID->
+     "f1358b80-e64b-4b01-86ba-2ab626eb8127"]},
+   {"", Cell[BoxData[
+     StyleBox["Steps", "InlineFormula"]],ExpressionUUID->
+     "f820a3ac-9810-414d-9bde-907cfe33c0a8"], Cell[BoxData[
+     StyleBox["20", "InlineFormula"]],ExpressionUUID->
+     "326cbe7d-6123-4555-9069-e2187eae7521"]}
+  }]], "2ColumnTableMod",ExpressionUUID->"e7461477-c0b0-41cd-b1f4-\
+572aebdef4ed"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Examples", "PrimaryExamplesSection",ExpressionUUID->"46e8c620-2f46-45d9-8a61-2eb977b2825d"],
+
+Cell[CellGroupData[{
+
+Cell["Basic Examples", "ExampleSection",ExpressionUUID->"84fbbfd8-e9ce-4ff9-a43f-0e6d8d749e4e"],
+
+Cell["Load the KoenderColor package:", "ExampleText",ExpressionUUID->"8079050a-d174-4c54-a148-34d7007b3014"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<KoenderColor`\>\"", "]"}]], "Input",ExpressionUUID->"ff4db881-73b3-41e7-be2f-4707d12337df"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",ExpressionUUID->"bd68b624-2640-4b42-8f4c-cc2915d11269"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["KoenderinkMetricMatrix"]], 
+    "paclet:KoenderColor/ref/KoenderinkMetricMatrix"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "119d38b4-c092-45bf-a40f-cef16c824baa"],
+ " \[FilledSmallSquare] ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["KoenderinkMetricTensor"]], 
+    "paclet:KoenderColor/ref/KoenderinkMetricTensor"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "7c5714bb-8787-4f68-850c-cc2ff8d2107f"],
+ " \[FilledSmallSquare] ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["KoenderinkEllipsoid"]], 
+    "paclet:KoenderColor/ref/KoenderinkEllipsoid"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "cf81077b-f39b-4f9a-b667-a95911ff4009"]
+}], "SeeAlso",ExpressionUUID->"77715863-e64f-4e23-9039-be80242fad9a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "MoreAboutSection",ExpressionUUID->"49c53385-8f41-468d-9846-36d355be1d75"],
+
+Cell[TextData[Cell[BoxData[
+ TemplateBox[{
+   Cell[
+    TextData["KoenderColor Guide"]], "paclet:KoenderColor/guide/KoenderColor"},
+  "RefLink",
+  BaseStyle->{
+   "MoreAbout"}]],ExpressionUUID->"516dfce8-35f1-4394-86a3-fe5967e601c8"]], \
+"MoreAbout",ExpressionUUID->"a7b06fed-dfe6-4e7e-829d-f10b1169028e"]
+}, Open  ]]
+}, Open  ]]
+},
+ScreenStyleEnvironment->"Working",
+WindowTitle->"KoenderinkColorDistance",
+TaggingRules-><|
+ "Metadata" -> <|
+   "context" -> "KoenderColor`", "type" -> "Symbol", "paclet" -> 
+    "KoenderColor", "language" -> "en", "title" -> "KoenderinkColorDistance", 
+    "windowtitle" -> "KoenderinkColorDistance", "uri" -> 
+    "KoenderColor/ref/KoenderinkColorDistance", "summary" -> 
+    "KoenderinkColorDistance[c1, c2, opts] computes the perceptual color \
+distance between colors c1 and c2 in units of Notable Qualitative Differences \
+(NQD).", "index" -> True|>|>,
+FrontEndVersion->"15.0 for Mac OS X ARM (64-bit) (July 2, 2026)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb"],
+ExpressionUUID->"5e82b095-72a2-4833-aef9-19bc7f07d7ba"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[591, 21, 95, 0, 70, "ContextNameCell",ExpressionUUID->"7b46b2a6-4679-4868-ad13-c5d7a3a7d587"],
+Cell[CellGroupData[{
+Cell[711, 25, 100, 0, 70, "ObjectName",ExpressionUUID->"f9619469-e95e-4ab4-8e0d-6006480ed044"],
+Cell[814, 27, 663, 15, 70, "Usage",ExpressionUUID->"aa208e59-7d47-4615-b30c-378d60ceb35e",
+ CellID->982511436],
+Cell[CellGroupData[{
+Cell[1502, 46, 98, 0, 70, "NotesSection",ExpressionUUID->"22c0f818-3603-4aed-8089-a3470edf989b"],
+Cell[1603, 48, 107, 0, 70, "Notes",ExpressionUUID->"4b4e7de0-d985-42ad-992c-4fb3098e1bce"],
+Cell[1713, 50, 1097, 22, 70, "2ColumnTableMod",ExpressionUUID->"e7461477-c0b0-41cd-b1f4-572aebdef4ed"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[2847, 77, 97, 0, 70, "PrimaryExamplesSection",ExpressionUUID->"46e8c620-2f46-45d9-8a61-2eb977b2825d"],
+Cell[CellGroupData[{
+Cell[2969, 81, 95, 0, 70, "ExampleSection",ExpressionUUID->"84fbbfd8-e9ce-4ff9-a43f-0e6d8d749e4e"],
+Cell[3067, 83, 108, 0, 70, "ExampleText",ExpressionUUID->"8079050a-d174-4c54-a148-34d7007b3014"],
+Cell[3178, 85, 133, 1, 70, "Input",ExpressionUUID->"ff4db881-73b3-41e7-be2f-4707d12337df"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3360, 92, 89, 0, 70, "SeeAlsoSection",ExpressionUUID->"bd68b624-2640-4b42-8f4c-cc2915d11269"],
+Cell[3452, 94, 873, 27, 70, "SeeAlso",ExpressionUUID->"77715863-e64f-4e23-9039-be80242fad9a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4362, 126, 97, 0, 70, "MoreAboutSection",ExpressionUUID->"49c53385-8f41-468d-9846-36d355be1d75"],
+Cell[4462, 128, 305, 7, 70, "MoreAbout",ExpressionUUID->"a7b06fed-dfe6-4e7e-829d-f10b1169028e"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

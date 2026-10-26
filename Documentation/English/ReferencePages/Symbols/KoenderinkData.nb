@@ -1,0 +1,158 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 15.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      5443,        149]
+NotebookOptionsPosition[      3247,        102]
+NotebookOutlinePosition[      4094,        126]
+CellTagsIndexPosition[      4051,        123]
+WindowTitle->KoenderinkData
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["KoenderColor`", "ContextNameCell",ExpressionUUID->"91834b19-0832-4626-b984-c3691772dbc1"],
+
+Cell[CellGroupData[{
+
+Cell["KoenderinkData", "ObjectName",ExpressionUUID->"bcc39cf4-eabf-4e68-9224-d43f38b3face"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"KoenderinkData", "[", "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "2edbd257-c77d-4ce1-bddb-51a17a829067"],
+     "\[LineSeparator]",
+     "returns the empirical dataset of 35 reference colors and fitted Sigma \
+matrices from Koenderink et al. (2026)."
+    }],ExpressionUUID->"a582a95d-794f-4250-9e48-392ab59b1f4e"]}
+  }]], "Usage",
+ CellID->982511436,ExpressionUUID->"4fffa71c-2ab2-4443-b79d-2c7312ec5f9b"],
+
+Cell[CellGroupData[{
+
+Cell["Details and Options", "NotesSection",ExpressionUUID->"e5560cb6-dc46-4db0-9f05-def6ac0683a7"],
+
+Cell["KoenderinkData has no options.", "Notes",ExpressionUUID->"a2c3993e-fd08-4a1d-af96-f02448e0ba8b"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Examples", "PrimaryExamplesSection",ExpressionUUID->"f18697ef-dc35-4a34-bd3a-1b3670864fb4"],
+
+Cell[CellGroupData[{
+
+Cell["Basic Examples", "ExampleSection",ExpressionUUID->"2ee4919b-3ad1-4ae2-9ad8-c6f6c2ec4caa"],
+
+Cell["Load the KoenderColor package:", "ExampleText",ExpressionUUID->"5eda24a0-1fcc-4f7e-aa55-975d1478d2d3"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<KoenderColor`\>\"", "]"}]], "Input",ExpressionUUID->"9eb40951-631e-42e5-9567-3ae167208e3f"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",ExpressionUUID->"180dc2ee-cc8b-4f4e-aa99-122c996b92b9"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["KoenderinkWeights"]], 
+    "paclet:KoenderColor/ref/KoenderinkWeights"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "a3fbcaaf-a1e0-48f6-bbdc-b475210998dc"],
+ " \[FilledSmallSquare] ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["FrobeniusMismatch"]], 
+    "paclet:KoenderColor/ref/FrobeniusMismatch"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "94e9ab52-524b-42e7-9ae4-fdac3ae57100"]
+}], "SeeAlso",ExpressionUUID->"ac31707f-937c-412e-9a6f-5573b2ebf554"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "MoreAboutSection",ExpressionUUID->"0c9cd49e-3755-4892-83e9-bb38626eb7a1"],
+
+Cell[TextData[Cell[BoxData[
+ TemplateBox[{
+   Cell[
+    TextData["KoenderColor Guide"]], "paclet:KoenderColor/guide/KoenderColor"},
+  "RefLink",
+  BaseStyle->{
+   "MoreAbout"}]],ExpressionUUID->"e73f6b0d-c074-43e5-bedd-e1675e8f1229"]], \
+"MoreAbout",ExpressionUUID->"93b024d7-783d-4b7e-8c37-e8bef3d981be"]
+}, Open  ]]
+}, Open  ]]
+},
+ScreenStyleEnvironment->"Working",
+WindowTitle->"KoenderinkData",
+TaggingRules-><|
+ "Metadata" -> <|
+   "context" -> "KoenderColor`", "type" -> "Symbol", "paclet" -> 
+    "KoenderColor", "language" -> "en", "title" -> "KoenderinkData", 
+    "windowtitle" -> "KoenderinkData", "uri" -> 
+    "KoenderColor/ref/KoenderinkData", "summary" -> 
+    "KoenderinkData[] returns the empirical dataset of 35 reference colors \
+and fitted Sigma matrices from Koenderink et al. (2026).", "index" -> True|>|>,
+FrontEndVersion->"15.0 for Mac OS X ARM (64-bit) (July 2, 2026)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb"],
+ExpressionUUID->"5e82b095-72a2-4833-aef9-19bc7f07d7ba"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[582, 21, 95, 0, 70, "ContextNameCell",ExpressionUUID->"91834b19-0832-4626-b984-c3691772dbc1"],
+Cell[CellGroupData[{
+Cell[702, 25, 91, 0, 70, "ObjectName",ExpressionUUID->"bcc39cf4-eabf-4e68-9224-d43f38b3face"],
+Cell[796, 27, 526, 11, 70, "Usage",ExpressionUUID->"4fffa71c-2ab2-4443-b79d-2c7312ec5f9b",
+ CellID->982511436],
+Cell[CellGroupData[{
+Cell[1347, 42, 98, 0, 70, "NotesSection",ExpressionUUID->"e5560cb6-dc46-4db0-9f05-def6ac0683a7"],
+Cell[1448, 44, 102, 0, 70, "Notes",ExpressionUUID->"a2c3993e-fd08-4a1d-af96-f02448e0ba8b"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1587, 49, 97, 0, 70, "PrimaryExamplesSection",ExpressionUUID->"f18697ef-dc35-4a34-bd3a-1b3670864fb4"],
+Cell[CellGroupData[{
+Cell[1709, 53, 95, 0, 70, "ExampleSection",ExpressionUUID->"2ee4919b-3ad1-4ae2-9ad8-c6f6c2ec4caa"],
+Cell[1807, 55, 108, 0, 70, "ExampleText",ExpressionUUID->"5eda24a0-1fcc-4f7e-aa55-975d1478d2d3"],
+Cell[1918, 57, 133, 1, 70, "Input",ExpressionUUID->"9eb40951-631e-42e5-9567-3ae167208e3f"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2100, 64, 89, 0, 70, "SeeAlsoSection",ExpressionUUID->"180dc2ee-cc8b-4f4e-aa99-122c996b92b9"],
+Cell[2192, 66, 585, 18, 70, "SeeAlso",ExpressionUUID->"ac31707f-937c-412e-9a6f-5573b2ebf554"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2814, 89, 97, 0, 70, "MoreAboutSection",ExpressionUUID->"0c9cd49e-3755-4892-83e9-bb38626eb7a1"],
+Cell[2914, 91, 305, 7, 70, "MoreAbout",ExpressionUUID->"93b024d7-783d-4b7e-8c37-e8bef3d981be"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

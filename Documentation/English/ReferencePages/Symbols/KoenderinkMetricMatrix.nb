@@ -1,0 +1,195 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 15.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      7057,        186]
+NotebookOptionsPosition[      4733,        138]
+NotebookOutlinePosition[      5602,        162]
+CellTagsIndexPosition[      5559,        159]
+WindowTitle->KoenderinkMetricMatrix
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["KoenderColor`", "ContextNameCell",ExpressionUUID->"02ba8e4b-530b-4c28-9cb1-4653d91342f7"],
+
+Cell[CellGroupData[{
+
+Cell["KoenderinkMetricMatrix", "ObjectName",ExpressionUUID->"df7fc87e-0348-41de-86bd-f297b14c034c"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"KoenderinkMetricMatrix", "[", 
+       RowBox[{
+        StyleBox["color", "TI"], ",", 
+        StyleBox["opts", "TI"]}], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "2ad69a78-7a18-47df-9cd2-8ca7018053ff"],
+     "\[LineSeparator]",
+     "computes the interpolated 3x3 symmetric positive-definite Sigma matrix \
+at color."
+    }],ExpressionUUID->"ef33bdea-d6c7-46f6-b5a1-919237b4f7cf"]}
+  }]], "Usage",
+ CellID->982511436,ExpressionUUID->"7753f8a5-4ea9-4425-8f57-3a8c4d8fd445"],
+
+Cell[CellGroupData[{
+
+Cell["Details and Options", "NotesSection",ExpressionUUID->"b0a0ee06-9f81-4b85-ad59-d80dd5802bf5"],
+
+Cell["The following options can be given:", "Notes",ExpressionUUID->"cd120440-f392-4900-9ed5-79b1b3a9b9dc"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[BoxData[
+     StyleBox["ColorSpace", "InlineFormula"]],ExpressionUUID->
+     "18d8766e-4f35-498e-9d54-86e2975f50f4"], Cell[BoxData[
+     StyleBox["sRGB", "InlineFormula"]],ExpressionUUID->
+     "de4d3a4f-86a4-405d-9ad0-5b30220af2b6"]},
+   {"", Cell[BoxData[
+     StyleBox["Bandwidth", "InlineFormula"]],ExpressionUUID->
+     "c59acdbf-fbab-4de3-abb0-56afc13738a8"], Cell[BoxData[
+     StyleBox["Automatic", "InlineFormula"]],ExpressionUUID->
+     "b5e4cde7-e987-4f19-abe0-a7bda22870e6"]},
+   {"", Cell[BoxData[
+     StyleBox["Neighborhood", "InlineFormula"]],ExpressionUUID->
+     "a92e1bd4-5d8f-4a7f-b1e8-6c3fff24ad9e"], Cell[BoxData[
+     StyleBox["All", "InlineFormula"]],ExpressionUUID->
+     "f389726c-ce6d-4817-ae21-5a749af9e637"]},
+   {"", Cell[BoxData[
+     StyleBox["Inverse", "InlineFormula"]],ExpressionUUID->
+     "a3e465d3-0255-482b-8566-eeb74c197769"], Cell[BoxData[
+     StyleBox["False", "InlineFormula"]],ExpressionUUID->
+     "77943818-71e5-4ae6-ad81-b7e34bf26ede"]}
+  }]], "2ColumnTableMod",ExpressionUUID->"da89c2f0-70cd-4faa-837e-\
+f19da887c3ae"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Examples", "PrimaryExamplesSection",ExpressionUUID->"21c7d450-ae4d-4a14-9547-0a1b25c0080e"],
+
+Cell[CellGroupData[{
+
+Cell["Basic Examples", "ExampleSection",ExpressionUUID->"dd135dcf-b125-4d96-bc4e-ab53bced1785"],
+
+Cell["Load the KoenderColor package:", "ExampleText",ExpressionUUID->"e731b497-9b01-434c-8f9b-1d045737dc1d"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<KoenderColor`\>\"", "]"}]], "Input",ExpressionUUID->"ecce7069-508f-4352-b184-dfa7c4093f87"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",ExpressionUUID->"d292b7e5-19a9-41e2-b7eb-336a3be84603"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["KoenderinkColorDistance"]], 
+    "paclet:KoenderColor/ref/KoenderinkColorDistance"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "934fc7ef-6333-4150-96f4-12ce4c40d836"],
+ " \[FilledSmallSquare] ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["KoenderinkMetricTensor"]], 
+    "paclet:KoenderColor/ref/KoenderinkMetricTensor"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "59a50eae-f40b-4d4d-9bde-496bd46b4f78"],
+ " \[FilledSmallSquare] ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["KoenderinkEllipsoid"]], 
+    "paclet:KoenderColor/ref/KoenderinkEllipsoid"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "0cc8705e-7472-4ca0-ab1f-6c6cfa660aae"]
+}], "SeeAlso",ExpressionUUID->"997fd44c-25f9-447d-b165-607bdf1eca21"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "MoreAboutSection",ExpressionUUID->"9253c978-904b-4f24-9056-fe4d36b3cdfb"],
+
+Cell[TextData[Cell[BoxData[
+ TemplateBox[{
+   Cell[
+    TextData["KoenderColor Guide"]], "paclet:KoenderColor/guide/KoenderColor"},
+  "RefLink",
+  BaseStyle->{
+   "MoreAbout"}]],ExpressionUUID->"80f9664a-6f2d-4031-8973-79d65fa66969"]], \
+"MoreAbout",ExpressionUUID->"0e5161e5-5921-4970-9e8d-447140c87280"]
+}, Open  ]]
+}, Open  ]]
+},
+ScreenStyleEnvironment->"Working",
+WindowTitle->"KoenderinkMetricMatrix",
+TaggingRules-><|
+ "Metadata" -> <|
+   "context" -> "KoenderColor`", "type" -> "Symbol", "paclet" -> 
+    "KoenderColor", "language" -> "en", "title" -> "KoenderinkMetricMatrix", 
+    "windowtitle" -> "KoenderinkMetricMatrix", "uri" -> 
+    "KoenderColor/ref/KoenderinkMetricMatrix", "summary" -> 
+    "KoenderinkMetricMatrix[color, opts] computes the interpolated 3x3 \
+symmetric positive-definite Sigma matrix at color.", "index" -> True|>|>,
+FrontEndVersion->"15.0 for Mac OS X ARM (64-bit) (July 2, 2026)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb"],
+ExpressionUUID->"5e82b095-72a2-4833-aef9-19bc7f07d7ba"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[590, 21, 95, 0, 70, "ContextNameCell",ExpressionUUID->"02ba8e4b-530b-4c28-9cb1-4653d91342f7"],
+Cell[CellGroupData[{
+Cell[710, 25, 99, 0, 70, "ObjectName",ExpressionUUID->"df7fc87e-0348-41de-86bd-f297b14c034c"],
+Cell[812, 27, 595, 14, 70, "Usage",ExpressionUUID->"7753f8a5-4ea9-4425-8f57-3a8c4d8fd445",
+ CellID->982511436],
+Cell[CellGroupData[{
+Cell[1432, 45, 98, 0, 70, "NotesSection",ExpressionUUID->"b0a0ee06-9f81-4b85-ad59-d80dd5802bf5"],
+Cell[1533, 47, 107, 0, 70, "Notes",ExpressionUUID->"cd120440-f392-4900-9ed5-79b1b3a9b9dc"],
+Cell[1643, 49, 1103, 22, 70, "2ColumnTableMod",ExpressionUUID->"da89c2f0-70cd-4faa-837e-f19da887c3ae"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[2783, 76, 97, 0, 70, "PrimaryExamplesSection",ExpressionUUID->"21c7d450-ae4d-4a14-9547-0a1b25c0080e"],
+Cell[CellGroupData[{
+Cell[2905, 80, 95, 0, 70, "ExampleSection",ExpressionUUID->"dd135dcf-b125-4d96-bc4e-ab53bced1785"],
+Cell[3003, 82, 108, 0, 70, "ExampleText",ExpressionUUID->"e731b497-9b01-434c-8f9b-1d045737dc1d"],
+Cell[3114, 84, 133, 1, 70, "Input",ExpressionUUID->"ecce7069-508f-4352-b184-dfa7c4093f87"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3296, 91, 89, 0, 70, "SeeAlsoSection",ExpressionUUID->"d292b7e5-19a9-41e2-b7eb-336a3be84603"],
+Cell[3388, 93, 875, 27, 70, "SeeAlso",ExpressionUUID->"997fd44c-25f9-447d-b165-607bdf1eca21"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4300, 125, 97, 0, 70, "MoreAboutSection",ExpressionUUID->"9253c978-904b-4f24-9056-fe4d36b3cdfb"],
+Cell[4400, 127, 305, 7, 70, "MoreAbout",ExpressionUUID->"0e5161e5-5921-4970-9e8d-447140c87280"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

@@ -1,0 +1,147 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 15.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      5113,        138]
+NotebookOptionsPosition[      2955,         91]
+NotebookOutlinePosition[      3765,        115]
+CellTagsIndexPosition[      3722,        112]
+WindowTitle->sRGBToLinearRGB
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["KoenderColor`", "ContextNameCell",ExpressionUUID->"3296a2fe-16fd-4607-bfdb-791e0ef1ea32"],
+
+Cell[CellGroupData[{
+
+Cell["sRGBToLinearRGB", "ObjectName",ExpressionUUID->"9f084c6e-f929-44a3-a06e-e494c3bd8f18"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"sRGBToLinearRGB", "[", 
+       StyleBox["rgb", "TI"], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "5f84ad2a-7062-4eb2-b88b-470776083eab"],
+     "\[LineSeparator]",
+     "converts gamma-encoded sRGB coordinates in [0, 1] to linear RGB."
+    }],ExpressionUUID->"20546a61-3913-4b04-87f5-43b462bb5830"]}
+  }]], "Usage",
+ CellID->982511436,ExpressionUUID->"2aefdc0f-449b-45f4-a8c5-0d403db9d5fd"],
+
+Cell[CellGroupData[{
+
+Cell["Details and Options", "NotesSection",ExpressionUUID->"0241c8e3-7718-44ff-bd47-705ecae54fb4"],
+
+Cell["sRGBToLinearRGB has no options.", "Notes",ExpressionUUID->"44e89294-897d-4afe-8ebe-905403cfa43a"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Examples", "PrimaryExamplesSection",ExpressionUUID->"f16ff80b-948c-4b14-b2fa-0099aa957e6a"],
+
+Cell[CellGroupData[{
+
+Cell["Basic Examples", "ExampleSection",ExpressionUUID->"557d1dfb-bec3-47ea-ac45-5c078c0560e9"],
+
+Cell["Load the KoenderColor package:", "ExampleText",ExpressionUUID->"1a41451c-d17d-44f9-b3fc-db47e6bd3c35"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<KoenderColor`\>\"", "]"}]], "Input",ExpressionUUID->"b04adad5-b869-454c-b757-42e62538b7fe"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",ExpressionUUID->"3f4e7624-e50f-4a59-9a4d-63a9f77649ee"],
+
+Cell[TextData[Cell[BoxData[
+ TemplateBox[{
+   Cell[
+    TextData["LinearRGBTosRGB"]], "paclet:KoenderColor/ref/LinearRGBTosRGB"},
+  "RefLink",
+  BaseStyle->{
+   "InlineFormula"}]],ExpressionUUID->"5cb7ac89-0de4-4857-a583-f34a3f91a4ab"]]\
+, "SeeAlso",ExpressionUUID->"a311c396-49ab-42d8-b3cf-37d85950769f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "MoreAboutSection",ExpressionUUID->"fcc87798-8ed5-4a83-ab4b-f98b4884e913"],
+
+Cell[TextData[Cell[BoxData[
+ TemplateBox[{
+   Cell[
+    TextData["KoenderColor Guide"]], "paclet:KoenderColor/guide/KoenderColor"},
+  "RefLink",
+  BaseStyle->{
+   "MoreAbout"}]],ExpressionUUID->"f07013af-40d6-40c9-a161-0880fbadbdb7"]], \
+"MoreAbout",ExpressionUUID->"91784e3b-d0f7-439e-a279-d0bcd8345086"]
+}, Open  ]]
+}, Open  ]]
+},
+ScreenStyleEnvironment->"Working",
+WindowTitle->"sRGBToLinearRGB",
+TaggingRules-><|
+ "Metadata" -> <|
+   "context" -> "KoenderColor`", "type" -> "Symbol", "paclet" -> 
+    "KoenderColor", "language" -> "en", "title" -> "sRGBToLinearRGB", 
+    "windowtitle" -> "sRGBToLinearRGB", "uri" -> 
+    "KoenderColor/ref/sRGBToLinearRGB", "summary" -> 
+    "sRGBToLinearRGB[rgb] converts gamma-encoded sRGB coordinates in [0, 1] \
+to linear RGB.", "index" -> True|>|>,
+FrontEndVersion->"15.0 for Mac OS X ARM (64-bit) (July 2, 2026)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb"],
+ExpressionUUID->"5e82b095-72a2-4833-aef9-19bc7f07d7ba"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[583, 21, 95, 0, 70, "ContextNameCell",ExpressionUUID->"3296a2fe-16fd-4607-bfdb-791e0ef1ea32"],
+Cell[CellGroupData[{
+Cell[703, 25, 92, 0, 70, "ObjectName",ExpressionUUID->"9f084c6e-f929-44a3-a06e-e494c3bd8f18"],
+Cell[798, 27, 511, 11, 70, "Usage",ExpressionUUID->"2aefdc0f-449b-45f4-a8c5-0d403db9d5fd",
+ CellID->982511436],
+Cell[CellGroupData[{
+Cell[1334, 42, 98, 0, 70, "NotesSection",ExpressionUUID->"0241c8e3-7718-44ff-bd47-705ecae54fb4"],
+Cell[1435, 44, 103, 0, 70, "Notes",ExpressionUUID->"44e89294-897d-4afe-8ebe-905403cfa43a"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1575, 49, 97, 0, 70, "PrimaryExamplesSection",ExpressionUUID->"f16ff80b-948c-4b14-b2fa-0099aa957e6a"],
+Cell[CellGroupData[{
+Cell[1697, 53, 95, 0, 70, "ExampleSection",ExpressionUUID->"557d1dfb-bec3-47ea-ac45-5c078c0560e9"],
+Cell[1795, 55, 108, 0, 70, "ExampleText",ExpressionUUID->"1a41451c-d17d-44f9-b3fc-db47e6bd3c35"],
+Cell[1906, 57, 133, 1, 70, "Input",ExpressionUUID->"b04adad5-b869-454c-b757-42e62538b7fe"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2088, 64, 89, 0, 70, "SeeAlsoSection",ExpressionUUID->"3f4e7624-e50f-4a59-9a4d-63a9f77649ee"],
+Cell[2180, 66, 305, 7, 70, "SeeAlso",ExpressionUUID->"a311c396-49ab-42d8-b3cf-37d85950769f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2522, 78, 97, 0, 70, "MoreAboutSection",ExpressionUUID->"fcc87798-8ed5-4a83-ab4b-f98b4884e913"],
+Cell[2622, 80, 305, 7, 70, "MoreAbout",ExpressionUUID->"91784e3b-d0f7-439e-a279-d0bcd8345086"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

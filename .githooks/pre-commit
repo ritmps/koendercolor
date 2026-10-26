@@ -1,0 +1,44 @@
+#!/usr/bin/env python3
+import os
+import re
+import subprocess
+import sys
+
+# Locate repo root
+script_dir = os.path.dirname(os.path.abspath(__file__))
+repo_root = os.path.dirname(script_dir)
+paclet_info = os.path.join(repo_root, "PacletInfo.wl")
+
+if not os.path.exists(paclet_info):
+    sys.exit(0)
+
+try:
+    count = subprocess.check_output(
+        ["git", "rev-list", "--count", "HEAD"],
+        cwd=repo_root
+    ).decode().strip()
+    build_num = str(int(count) + 1)
+except Exception:
+    build_num = "1"
+
+with open(paclet_info, "r", encoding="utf-8") as f:
+    content = f.read()
+
+# Update "Version" -> "major.minor.<build_num>"
+ver_pattern = r'"Version"\s*->\s*"(\d+)\.(\d+)(?:\.\d+)?"'
+ver_repl = f'"Version" -> "\\g<1>.\\g<2>.{build_num}"'
+new_content = re.sub(ver_pattern, ver_repl, content)
+
+# Also update "BuildNumber"
+if '"BuildNumber"' in new_content:
+    new_content = re.sub(r'"BuildNumber"\s*->\s*"[^"]*"', f'"BuildNumber" -> "{build_num}"', new_content)
+else:
+    new_content = re.sub(r'("Version"\s*->\s*"[^"]*",)', rf'\1\n    "BuildNumber" -> "{build_num}",', new_content)
+
+if new_content != content:
+    with open(paclet_info, "w", encoding="utf-8") as f:
+        f.write(new_content)
+    subprocess.run(["git", "add", paclet_info], cwd=repo_root)
+    m = re.search(r'"Version"\s*->\s*"([^"]*)"', new_content)
+    ver_str = m.group(1) if m else build_num
+    print(f"[hook] Bumped PacletInfo.wl: Version -> \"{ver_str}\" (Build {build_num})")

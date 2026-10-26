@@ -1,0 +1,201 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 15.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      7345,        192]
+NotebookOptionsPosition[      5003,        143]
+NotebookOutlinePosition[      5890,        168]
+CellTagsIndexPosition[      5847,        165]
+WindowTitle->KoenderinkEllipsoid
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["KoenderColor`", "ContextNameCell",ExpressionUUID->"997d02ca-6456-4530-9b99-37c1d644a38f"],
+
+Cell[CellGroupData[{
+
+Cell["KoenderinkEllipsoid", "ObjectName",ExpressionUUID->"da988ddb-52df-4d71-9925-8474be66185a"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"KoenderinkEllipsoid", "[", 
+       RowBox[{
+        StyleBox["color", "TI"], ",", 
+        StyleBox["opts", "TI"]}], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "917d5a98-4bdb-4c05-b8b3-bdd5c772ca50"],
+     "\[LineSeparator]",
+     "returns a Graphics3D Ellipsoid primitive representing the Notable \
+Qualitative Difference (NQD) region at color."
+    }],ExpressionUUID->"ddbf38a7-8dbe-4bc1-96ad-c8dbda576e51"]}
+  }]], "Usage",
+ CellID->982511436,ExpressionUUID->"2f81b789-6db2-42d6-91f6-ca738015cf06"],
+
+Cell[CellGroupData[{
+
+Cell["Details and Options", "NotesSection",ExpressionUUID->"dc079eb2-cc66-4752-bb1d-79071939b7ff"],
+
+Cell["The following options can be given:", "Notes",ExpressionUUID->"c98b367e-a146-41da-8feb-9b91066afbd0"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[BoxData[
+     StyleBox["Scale", "InlineFormula"]],ExpressionUUID->
+     "ff716ef2-c17b-4983-a642-6cef859c4c7a"], Cell[BoxData[
+     StyleBox["1.", "InlineFormula"]],ExpressionUUID->
+     "b25e4f72-d43b-4724-be08-899d653d53c7"]},
+   {"", Cell[BoxData[
+     StyleBox["ColorSpace", "InlineFormula"]],ExpressionUUID->
+     "3691d278-8e3f-4375-8dc0-a89910257920"], Cell[BoxData[
+     StyleBox["sRGB", "InlineFormula"]],ExpressionUUID->
+     "4742d06f-3693-466e-9d2b-7a3f3c2cfad5"]},
+   {"", Cell[BoxData[
+     StyleBox["Bandwidth", "InlineFormula"]],ExpressionUUID->
+     "470f5151-a8fb-4c3f-bcfb-eecd2fa1d8b6"], Cell[BoxData[
+     StyleBox["Automatic", "InlineFormula"]],ExpressionUUID->
+     "7b3f8f3e-6f82-4700-ac72-bd7821bf2305"]},
+   {"", Cell[BoxData[
+     StyleBox["Neighborhood", "InlineFormula"]],ExpressionUUID->
+     "b135d19d-b94f-4ad4-a9b0-e62efd0b21ee"], Cell[BoxData[
+     StyleBox["All", "InlineFormula"]],ExpressionUUID->
+     "651e9c24-897d-402f-bd68-b29e9e1d477f"]},
+   {"", Cell[BoxData[
+     StyleBox["Inverse", "InlineFormula"]],ExpressionUUID->
+     "ad057d08-ae5d-4fd4-b361-314e1f1da4f6"], Cell[BoxData[
+     StyleBox["False", "InlineFormula"]],ExpressionUUID->
+     "adc5a123-1c02-4504-afbc-e3bfcd7004f5"]}
+  }]], "2ColumnTableMod",ExpressionUUID->"21b7b339-ac77-45b8-bd9a-\
+65373e2f1233"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Examples", "PrimaryExamplesSection",ExpressionUUID->"42a007a1-90d4-40ab-89dd-12f34c21ccb5"],
+
+Cell[CellGroupData[{
+
+Cell["Basic Examples", "ExampleSection",ExpressionUUID->"e804bb2c-13ad-4bc6-b29e-f29f874727f8"],
+
+Cell["Load the KoenderColor package:", "ExampleText",ExpressionUUID->"a576d2c8-fdee-475d-8541-5de438b72fd8"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<KoenderColor`\>\"", "]"}]], "Input",ExpressionUUID->"f85c79fe-001a-418c-9414-bb5f8798418a"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",ExpressionUUID->"16bcf23d-5ba7-489b-985c-c974851e42f1"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["KoenderinkColorDistance"]], 
+    "paclet:KoenderColor/ref/KoenderinkColorDistance"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "d83001e2-4ebc-46e6-8218-c7584a8b329c"],
+ " \[FilledSmallSquare] ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["KoenderinkMetricMatrix"]], 
+    "paclet:KoenderColor/ref/KoenderinkMetricMatrix"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "0ecb547f-0d58-422a-bfb9-10ff51576d58"],
+ " \[FilledSmallSquare] ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["KoenderinkMetricTensor"]], 
+    "paclet:KoenderColor/ref/KoenderinkMetricTensor"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]],ExpressionUUID->
+  "912319c6-113a-4778-b37a-7c774370ab5b"]
+}], "SeeAlso",ExpressionUUID->"8a9ff8bf-cef7-419e-b976-3ead653e75ac"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "MoreAboutSection",ExpressionUUID->"f0ebbc21-56fc-4694-baea-d1a7f5164e3a"],
+
+Cell[TextData[Cell[BoxData[
+ TemplateBox[{
+   Cell[
+    TextData["KoenderColor Guide"]], "paclet:KoenderColor/guide/KoenderColor"},
+  "RefLink",
+  BaseStyle->{
+   "MoreAbout"}]],ExpressionUUID->"8185f2b6-fa60-4f99-a441-322b4f2f135e"]], \
+"MoreAbout",ExpressionUUID->"021fc804-40ad-48b6-8b0e-94e0b8ad036a"]
+}, Open  ]]
+}, Open  ]]
+},
+ScreenStyleEnvironment->"Working",
+WindowTitle->"KoenderinkEllipsoid",
+TaggingRules-><|
+ "Metadata" -> <|
+   "context" -> "KoenderColor`", "type" -> "Symbol", "paclet" -> 
+    "KoenderColor", "language" -> "en", "title" -> "KoenderinkEllipsoid", 
+    "windowtitle" -> "KoenderinkEllipsoid", "uri" -> 
+    "KoenderColor/ref/KoenderinkEllipsoid", "summary" -> 
+    "KoenderinkEllipsoid[color, opts] returns a Graphics3D Ellipsoid \
+primitive representing the Notable Qualitative Difference (NQD) region at \
+color.", "index" -> True|>|>,
+FrontEndVersion->"15.0 for Mac OS X ARM (64-bit) (July 2, 2026)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb"],
+ExpressionUUID->"5e82b095-72a2-4833-aef9-19bc7f07d7ba"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[587, 21, 95, 0, 70, "ContextNameCell",ExpressionUUID->"997d02ca-6456-4530-9b99-37c1d644a38f"],
+Cell[CellGroupData[{
+Cell[707, 25, 96, 0, 70, "ObjectName",ExpressionUUID->"da988ddb-52df-4d71-9925-8474be66185a"],
+Cell[806, 27, 623, 14, 70, "Usage",ExpressionUUID->"2f81b789-6db2-42d6-91f6-ca738015cf06",
+ CellID->982511436],
+Cell[CellGroupData[{
+Cell[1454, 45, 98, 0, 70, "NotesSection",ExpressionUUID->"dc079eb2-cc66-4752-bb1d-79071939b7ff"],
+Cell[1555, 47, 107, 0, 70, "Notes",ExpressionUUID->"c98b367e-a146-41da-8feb-9b91066afbd0"],
+Cell[1665, 49, 1345, 27, 70, "2ColumnTableMod",ExpressionUUID->"21b7b339-ac77-45b8-bd9a-65373e2f1233"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[3047, 81, 97, 0, 70, "PrimaryExamplesSection",ExpressionUUID->"42a007a1-90d4-40ab-89dd-12f34c21ccb5"],
+Cell[CellGroupData[{
+Cell[3169, 85, 95, 0, 70, "ExampleSection",ExpressionUUID->"e804bb2c-13ad-4bc6-b29e-f29f874727f8"],
+Cell[3267, 87, 108, 0, 70, "ExampleText",ExpressionUUID->"a576d2c8-fdee-475d-8541-5de438b72fd8"],
+Cell[3378, 89, 133, 1, 70, "Input",ExpressionUUID->"f85c79fe-001a-418c-9414-bb5f8798418a"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3560, 96, 89, 0, 70, "SeeAlsoSection",ExpressionUUID->"16bcf23d-5ba7-489b-985c-c974851e42f1"],
+Cell[3652, 98, 881, 27, 70, "SeeAlso",ExpressionUUID->"8a9ff8bf-cef7-419e-b976-3ead653e75ac"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4570, 130, 97, 0, 70, "MoreAboutSection",ExpressionUUID->"f0ebbc21-56fc-4694-baea-d1a7f5164e3a"],
+Cell[4670, 132, 305, 7, 70, "MoreAbout",ExpressionUUID->"021fc804-40ad-48b6-8b0e-94e0b8ad036a"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
