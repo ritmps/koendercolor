@@ -49,7 +49,7 @@ To develop an intuition for the metric's values compared to standard industrial 
   * `"Midpoint"`: Fast symmetric chord metric via the midpoint Riemannian tensor.
   * `"LineIntegral"`: Numerical quadrature along straight color paths.
   * `"Geodesic"`: Shortest path along the Riemannian manifold via energy-minimizing relaxation.
-* **`FrobeniusMismatch`**: Normalized matrix mismatch $\mu_F(S, T) = \frac{\|S - T\|_F}{\|S\|_F + \|T\|_F}$ (Equation 364).
+* **`FrobeniusMismatch`**: Normalized matrix mismatch $\mu_F(S, T) = \frac{\|S - T\|_F}{\|S\|_F + \|T\|_F}$.
 * **Coordinate Transformations**: Smooth conversion between sRGB and linear RGB (`sRGBToLinearRGB`, `LinearRGBTosRGB`).
 
 ## Quickstart
@@ -110,17 +110,6 @@ To rebuild all documentation notebooks from source symbol usages, run:
 ```bash
 wolframscript -file scripts/generate_docs.wl
 ```
-
-## Development & Git Hooks
-
-This repository uses a Git pre-commit hook to automatically increment the build number in `PacletInfo.wl` on each commit (`Version -> "1.0.<build_count>"`):
-
-```bash
-git config core.hooksPath .githooks
-chmod +x .githooks/pre-commit
-```
-
-Large binary assets and documentation assets can be tracked using **Git LFS**.
 
 ## Reference
 
