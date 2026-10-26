@@ -18,6 +18,27 @@ $$(x - x_0)^T \Sigma(x_0)^{-1} (x - x_0) \le 1$$
 
 `KoenderColor` provides the raw empirical data from the paper (both gamma-encoded sRGB and linear RGB) along with tools for continuous RBF field interpolation, Riemannian metric tensor evaluation, and perceptual distance calculations.
 
+## Intuition & Scale Relation to Traditional $\Delta E$
+
+To develop an intuition for the metric's values compared to standard industrial metrics ($\Delta E_{ab}^*$, CIEDE2000):
+
+* **Thresholds (JND) vs. Categorical Grains (NQD)**:
+  * $\mathbf{\Delta E = 1.0}$ represents a **Just Noticeable Difference (JND)** measured with adjacent color patches separated by a sharp edge (relying on edge-contrast detection).
+  * $\mathbf{1.0\text{ unit}}$ in this metric represents a **Notable Qualitative Difference (NQD)** — the point where observers judge an area color to be perceptually distinct across a thick black dividing boundary.
+  * **Scale Ratio**: $1\text{ NQD unit} \approx 5 \pm 2\ \text{CIEDE2000 units}$. (In Wolfram Language's built-in `ColorDistance`, which normalizes black-to-white to $1.0$, $1\text{ NQD} \approx 0.05$ `ColorDistance`).
+
+* **Gamut Capacity**:
+  * Counting unit $\Delta E$ cubes yields **$\approx 2.2$ million** discriminable colors in the optimal color solid.
+  * Scaling the linear grain by $\approx 5\text{--}10\times$ reduces volume cubically: the entire sRGB cube accommodates only **$\approx 1,200$ qualitatively distinct color grains** (Figure 12 of the paper packs 1,241 BCC grains).
+
+* **Black-to-White Span**:
+  * In CIELAB, $L^*$ spans $0$ to $100$ ($\Delta E \approx 100$).
+  * In Koenderink space, the line-integral distance from $(0.2, 0.2, 0.2)$ to $(0.8, 0.8, 0.8)$ is **$\approx 21.3$ NQD units**, extrapolating to roughly **$25\text{--}30$ NQD units** across the full $[0, 1]^3$ cube ($25 \times 5\ \Delta E \approx 125\ \Delta E$).
+
+* **Systematic Divergence from CIEDE2000**:
+  * **Grayscale Tolerance**: Empirical grayscale ellipsoids are $\approx 3\times$ larger than CIEDE2000 predicts — human observers tolerate much greater luminance variation along neutral grays before perceiving a qualitative step.
+  * **Ellipsoid Shape**: Empirical grains are closer to spheroidal with a mild prolate bias along the luminance axis, avoiding the extreme eccentricities imposed by CIEDE2000's separable $S_L, S_C, S_H$ formulas.
+
 ## Features & Tools
 
 * **`KoenderinkData`**: Access the empirical 35-point BCC lattice data and fitted covariance tensors $\Sigma$ (from Appendix Tables A2 and A3).
