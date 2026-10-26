@@ -19,11 +19,11 @@ WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-Cell["KoenderColor`", "ContextNameCell",ExpressionUUID->"55197d4f-cde2-4f4d-a021-106e374d4541"],
+Cell["KoenderColor`", "ContextNameCell",ExpressionUUID->"b5a78b35-1dbf-46ce-b98d-0dc06c5394fa"],
 
 Cell[CellGroupData[{
 
-Cell["KoenderinkMetricTensor", "ObjectName",ExpressionUUID->"aee5ccb2-a9de-4eb2-b429-33e75d49c898"],
+Cell["KoenderinkMetricTensor", "ObjectName",ExpressionUUID->"fbe9c451-96a6-47a8-88ca-f49a059fe84b"],
 
 Cell[BoxData[GridBox[{
    {"", Cell[TextData[{
@@ -33,63 +33,63 @@ Cell[BoxData[GridBox[{
         StyleBox["color", "TI"], ",", 
         StyleBox["opts", "TI"]}], "]"}]], "InlineFormula",
       FontFamily->"Source Sans Pro",ExpressionUUID->
-      "1c2dc4ea-f5d9-4cef-9df8-078c7df66ec3"],
+      "62081cc4-f03a-4f60-b1f2-f5e6c576b587"],
      "\[LineSeparator]",
      "returns the Riemannian metric tensor g(color) = \
 Inverse[KoenderinkMetricMatrix[color]]."
-    }],ExpressionUUID->"8636c8a3-38f5-47b0-8312-0d5af0f4f01c"]}
+    }],ExpressionUUID->"eabeeb93-6058-4db2-a3d2-e31ef6fa1444"]}
   }]], "Usage",
- CellID->982511436,ExpressionUUID->"76cb2ac4-02fc-4a75-844d-b8fe79c8f510"],
+ CellID->982511436,ExpressionUUID->"91c36f0e-bf45-4756-9e22-6f31ad2f58bb"],
 
 Cell[CellGroupData[{
 
-Cell["Details and Options", "NotesSection",ExpressionUUID->"dacdfc85-0352-42dd-a7b6-16ec8c31efd1"],
+Cell["Details and Options", "NotesSection",ExpressionUUID->"76d6dcc2-b0a1-47fe-b8ec-0c29cd9cc5d8"],
 
-Cell["The following options can be given:", "Notes",ExpressionUUID->"d22508f1-0ab5-4c4d-b204-cafbb7bebed9"],
+Cell["The following options can be given:", "Notes",ExpressionUUID->"2a14034c-9db3-4116-971e-ef9873a9da64"],
 
 Cell[BoxData[GridBox[{
    {"", Cell[BoxData[
      StyleBox["ColorSpace", "InlineFormula"]],ExpressionUUID->
-     "a1fef63c-2006-4d34-93ad-293d0d540366"], Cell[BoxData[
+     "ab53c096-44ae-4ba5-b5e7-04d890dbb4a6"], Cell[BoxData[
      StyleBox["sRGB", "InlineFormula"]],ExpressionUUID->
-     "804a0c6f-424f-42d0-a05c-67fd21a30b7a"]},
+     "8e4f249d-cc58-4b9d-bd28-f5c86ea747f3"]},
    {"", Cell[BoxData[
      StyleBox["Bandwidth", "InlineFormula"]],ExpressionUUID->
-     "e3910670-30f5-486b-8a56-99fe9d3c20e8"], Cell[BoxData[
+     "215b8cba-8eac-4e20-b820-efa30fdf354c"], Cell[BoxData[
      StyleBox["Automatic", "InlineFormula"]],ExpressionUUID->
-     "3c6c9e23-615a-4ea5-bb85-d4220cfdb659"]},
+     "c2e69a4c-de37-4ac7-86e1-f90b79ebeab0"]},
    {"", Cell[BoxData[
      StyleBox["Neighborhood", "InlineFormula"]],ExpressionUUID->
-     "016c3fc2-19bb-49d1-974f-22178e94b655"], Cell[BoxData[
+     "d5021523-2f5c-4ad6-abe0-de35662852be"], Cell[BoxData[
      StyleBox["All", "InlineFormula"]],ExpressionUUID->
-     "854f4490-e79d-4cf5-b81d-c3f751b420b3"]},
+     "1b1175e2-275b-408c-a51d-18d0f0edf0ba"]},
    {"", Cell[BoxData[
      StyleBox["Inverse", "InlineFormula"]],ExpressionUUID->
-     "b0b113fd-a382-4feb-ac78-1e63b97a1a08"], Cell[BoxData[
+     "62e3184d-8f5d-482f-83e9-bd05c89807db"], Cell[BoxData[
      StyleBox["False", "InlineFormula"]],ExpressionUUID->
-     "9ddcb3b4-5aca-4abf-8e69-65e85dd048bd"]}
-  }]], "2ColumnTableMod",ExpressionUUID->"141fab8b-a8a1-405d-bce0-\
-a29f275fc5b1"]
+     "de46eaaa-867c-448d-87ca-84d68ce5be2f"]}
+  }]], "2ColumnTableMod",ExpressionUUID->"69fafcb4-3da3-4a96-a090-\
+98f833031b12"]
 }, Closed]],
 
 Cell[CellGroupData[{
 
-Cell["Examples", "PrimaryExamplesSection",ExpressionUUID->"2acabe53-1a37-4984-90e5-10e5a9a668f8"],
+Cell["Examples", "PrimaryExamplesSection",ExpressionUUID->"6429d8fe-98f7-4430-93c0-3fe25a1af343"],
 
 Cell[CellGroupData[{
 
-Cell["Basic Examples", "ExampleSection",ExpressionUUID->"d5b99231-c45e-4a74-82ef-dff43c18d4ba"],
+Cell["Basic Examples", "ExampleSection",ExpressionUUID->"6e7a1311-9e28-4559-b382-54e44c61c637"],
 
-Cell["Load the KoenderColor package:", "ExampleText",ExpressionUUID->"be0724a9-9e56-4c7b-a01c-8b7532766566"],
+Cell["Load the KoenderColor package:", "ExampleText",ExpressionUUID->"7d9cceaf-52e9-4c29-b8f8-46f142a42e88"],
 
 Cell[BoxData[
- RowBox[{"Needs", "[", "\"\<KoenderColor`\>\"", "]"}]], "Input",ExpressionUUID->"719cfd41-3195-41b7-be10-82239f5bf7ec"]
+ RowBox[{"Needs", "[", "\"\<KoenderColor`\>\"", "]"}]], "Input",ExpressionUUID->"b53c1a2c-8801-4c38-92a0-ac00c3012e4b"]
 }, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell["See Also", "SeeAlsoSection",ExpressionUUID->"b2fd20ea-9df6-4a0a-8842-68b98d858311"],
+Cell["See Also", "SeeAlsoSection",ExpressionUUID->"7065f7be-25de-4e7b-8e3a-8d31d75b81be"],
 
 Cell[TextData[{
  Cell[BoxData[
@@ -99,7 +99,7 @@ Cell[TextData[{
     "paclet:KoenderColor/ref/KoenderinkColorDistance"},
    "RefLink",
    BaseStyle->{"InlineFormula"}]],ExpressionUUID->
-  "80f2e1d4-74f1-4e35-8bd7-7cde953d740c"],
+  "469705b8-f5a5-4ccd-a1c0-b8bfcc7fcd16"],
  " \[FilledSmallSquare] ",
  Cell[BoxData[
   TemplateBox[{
@@ -108,7 +108,7 @@ Cell[TextData[{
     "paclet:KoenderColor/ref/KoenderinkMetricMatrix"},
    "RefLink",
    BaseStyle->{"InlineFormula"}]],ExpressionUUID->
-  "4cb044ad-5d22-4008-a56e-239bca4360a6"],
+  "93b91eb7-ed07-4478-9095-c74f7ffbfcbb"],
  " \[FilledSmallSquare] ",
  Cell[BoxData[
   TemplateBox[{
@@ -117,13 +117,13 @@ Cell[TextData[{
     "paclet:KoenderColor/ref/KoenderinkEllipsoid"},
    "RefLink",
    BaseStyle->{"InlineFormula"}]],ExpressionUUID->
-  "b65a8c75-62f8-470c-8ad5-cbd48cb68f4b"]
-}], "SeeAlso",ExpressionUUID->"f5791452-abed-4318-b59a-f6a5352a63bf"]
+  "d910591f-7edb-4536-8028-2bc97cc23692"]
+}], "SeeAlso",ExpressionUUID->"b75eebf7-9d2e-46f3-8eec-b23107d4e5b3"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell["Related Guides", "MoreAboutSection",ExpressionUUID->"fa366efe-2568-4882-835d-d2db5bdb1227"],
+Cell["Related Guides", "MoreAboutSection",ExpressionUUID->"9c007245-b979-4e4c-8ce6-3fd4a27cb866"],
 
 Cell[TextData[Cell[BoxData[
  TemplateBox[{
@@ -131,8 +131,8 @@ Cell[TextData[Cell[BoxData[
     TextData["KoenderColor Guide"]], "paclet:KoenderColor/guide/KoenderColor"},
   "RefLink",
   BaseStyle->{
-   "MoreAbout"}]],ExpressionUUID->"2b910c62-561c-48eb-8322-e42c27ee1a30"]], \
-"MoreAbout",ExpressionUUID->"51f1497d-982f-4d27-a21a-f5464a489295"]
+   "MoreAbout"}]],ExpressionUUID->"7b129212-0a17-44db-bf78-6e8c8901a6b0"]], \
+"MoreAbout",ExpressionUUID->"42b30ce8-1ae7-44c5-bd1b-991ee60fc2d5"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -148,7 +148,7 @@ TaggingRules-><|
 g(color) = Inverse[KoenderinkMetricMatrix[color]].", "index" -> True|>|>,
 FrontEndVersion->"15.0 for Mac OS X ARM (64-bit) (July 2, 2026)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb"],
-ExpressionUUID->"5e82b095-72a2-4833-aef9-19bc7f07d7ba"
+ExpressionUUID->"7760bc40-648a-41c0-a9ae-94b9bd1a6599"
 ]
 (* End of Notebook Content *)
 
@@ -161,31 +161,31 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[590, 21, 95, 0, 70, "ContextNameCell",ExpressionUUID->"55197d4f-cde2-4f4d-a021-106e374d4541"],
+Cell[590, 21, 95, 0, 70, "ContextNameCell",ExpressionUUID->"b5a78b35-1dbf-46ce-b98d-0dc06c5394fa"],
 Cell[CellGroupData[{
-Cell[710, 25, 99, 0, 70, "ObjectName",ExpressionUUID->"aee5ccb2-a9de-4eb2-b429-33e75d49c898"],
-Cell[812, 27, 602, 14, 70, "Usage",ExpressionUUID->"76cb2ac4-02fc-4a75-844d-b8fe79c8f510",
+Cell[710, 25, 99, 0, 70, "ObjectName",ExpressionUUID->"fbe9c451-96a6-47a8-88ca-f49a059fe84b"],
+Cell[812, 27, 602, 14, 70, "Usage",ExpressionUUID->"91c36f0e-bf45-4756-9e22-6f31ad2f58bb",
  CellID->982511436],
 Cell[CellGroupData[{
-Cell[1439, 45, 98, 0, 70, "NotesSection",ExpressionUUID->"dacdfc85-0352-42dd-a7b6-16ec8c31efd1"],
-Cell[1540, 47, 107, 0, 70, "Notes",ExpressionUUID->"d22508f1-0ab5-4c4d-b204-cafbb7bebed9"],
-Cell[1650, 49, 1103, 22, 70, "2ColumnTableMod",ExpressionUUID->"141fab8b-a8a1-405d-bce0-a29f275fc5b1"]
+Cell[1439, 45, 98, 0, 70, "NotesSection",ExpressionUUID->"76d6dcc2-b0a1-47fe-b8ec-0c29cd9cc5d8"],
+Cell[1540, 47, 107, 0, 70, "Notes",ExpressionUUID->"2a14034c-9db3-4116-971e-ef9873a9da64"],
+Cell[1650, 49, 1103, 22, 70, "2ColumnTableMod",ExpressionUUID->"69fafcb4-3da3-4a96-a090-98f833031b12"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[2790, 76, 97, 0, 70, "PrimaryExamplesSection",ExpressionUUID->"2acabe53-1a37-4984-90e5-10e5a9a668f8"],
+Cell[2790, 76, 97, 0, 70, "PrimaryExamplesSection",ExpressionUUID->"6429d8fe-98f7-4430-93c0-3fe25a1af343"],
 Cell[CellGroupData[{
-Cell[2912, 80, 95, 0, 70, "ExampleSection",ExpressionUUID->"d5b99231-c45e-4a74-82ef-dff43c18d4ba"],
-Cell[3010, 82, 108, 0, 70, "ExampleText",ExpressionUUID->"be0724a9-9e56-4c7b-a01c-8b7532766566"],
-Cell[3121, 84, 133, 1, 70, "Input",ExpressionUUID->"719cfd41-3195-41b7-be10-82239f5bf7ec"]
+Cell[2912, 80, 95, 0, 70, "ExampleSection",ExpressionUUID->"6e7a1311-9e28-4559-b382-54e44c61c637"],
+Cell[3010, 82, 108, 0, 70, "ExampleText",ExpressionUUID->"7d9cceaf-52e9-4c29-b8f8-46f142a42e88"],
+Cell[3121, 84, 133, 1, 70, "Input",ExpressionUUID->"b53c1a2c-8801-4c38-92a0-ac00c3012e4b"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3303, 91, 89, 0, 70, "SeeAlsoSection",ExpressionUUID->"b2fd20ea-9df6-4a0a-8842-68b98d858311"],
-Cell[3395, 93, 875, 27, 70, "SeeAlso",ExpressionUUID->"f5791452-abed-4318-b59a-f6a5352a63bf"]
+Cell[3303, 91, 89, 0, 70, "SeeAlsoSection",ExpressionUUID->"7065f7be-25de-4e7b-8e3a-8d31d75b81be"],
+Cell[3395, 93, 875, 27, 70, "SeeAlso",ExpressionUUID->"b75eebf7-9d2e-46f3-8eec-b23107d4e5b3"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4307, 125, 97, 0, 70, "MoreAboutSection",ExpressionUUID->"fa366efe-2568-4882-835d-d2db5bdb1227"],
-Cell[4407, 127, 305, 7, 70, "MoreAbout",ExpressionUUID->"51f1497d-982f-4d27-a21a-f5464a489295"]
+Cell[4307, 125, 97, 0, 70, "MoreAboutSection",ExpressionUUID->"9c007245-b979-4e4c-8ce6-3fd4a27cb866"],
+Cell[4407, 127, 305, 7, 70, "MoreAbout",ExpressionUUID->"42b30ce8-1ae7-44c5-bd1b-991ee60fc2d5"]
 }, Open  ]]
 }, Open  ]]
 }

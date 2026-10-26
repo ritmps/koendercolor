@@ -19,11 +19,11 @@ WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-Cell["KoenderColor`", "ContextNameCell",ExpressionUUID->"997d02ca-6456-4530-9b99-37c1d644a38f"],
+Cell["KoenderColor`", "ContextNameCell",ExpressionUUID->"dd1dd849-dd2a-407f-874d-e46f08e2bddc"],
 
 Cell[CellGroupData[{
 
-Cell["KoenderinkEllipsoid", "ObjectName",ExpressionUUID->"da988ddb-52df-4d71-9925-8474be66185a"],
+Cell["KoenderinkEllipsoid", "ObjectName",ExpressionUUID->"5270ed48-4b7c-44bf-a79f-469b9b050752"],
 
 Cell[BoxData[GridBox[{
    {"", Cell[TextData[{
@@ -33,68 +33,68 @@ Cell[BoxData[GridBox[{
         StyleBox["color", "TI"], ",", 
         StyleBox["opts", "TI"]}], "]"}]], "InlineFormula",
       FontFamily->"Source Sans Pro",ExpressionUUID->
-      "917d5a98-4bdb-4c05-b8b3-bdd5c772ca50"],
+      "3de62091-a95e-48e4-a81a-030656576e4c"],
      "\[LineSeparator]",
      "returns a Graphics3D Ellipsoid primitive representing the Notable \
 Qualitative Difference (NQD) region at color."
-    }],ExpressionUUID->"ddbf38a7-8dbe-4bc1-96ad-c8dbda576e51"]}
+    }],ExpressionUUID->"a39a8665-ad65-4f34-a098-785752021a5d"]}
   }]], "Usage",
- CellID->982511436,ExpressionUUID->"2f81b789-6db2-42d6-91f6-ca738015cf06"],
+ CellID->982511436,ExpressionUUID->"1af4e3e5-4487-43d6-9838-d544b1fe9d50"],
 
 Cell[CellGroupData[{
 
-Cell["Details and Options", "NotesSection",ExpressionUUID->"dc079eb2-cc66-4752-bb1d-79071939b7ff"],
+Cell["Details and Options", "NotesSection",ExpressionUUID->"3882508f-b2dc-4496-b7aa-2d64ac634943"],
 
-Cell["The following options can be given:", "Notes",ExpressionUUID->"c98b367e-a146-41da-8feb-9b91066afbd0"],
+Cell["The following options can be given:", "Notes",ExpressionUUID->"a55784b0-ee44-4da5-84b3-7ac35798d3e5"],
 
 Cell[BoxData[GridBox[{
    {"", Cell[BoxData[
      StyleBox["Scale", "InlineFormula"]],ExpressionUUID->
-     "ff716ef2-c17b-4983-a642-6cef859c4c7a"], Cell[BoxData[
+     "61c179c1-640a-45a5-b263-9f703f7926c9"], Cell[BoxData[
      StyleBox["1.", "InlineFormula"]],ExpressionUUID->
-     "b25e4f72-d43b-4724-be08-899d653d53c7"]},
+     "7e124207-532c-4c9b-8928-dc678e15b7bf"]},
    {"", Cell[BoxData[
      StyleBox["ColorSpace", "InlineFormula"]],ExpressionUUID->
-     "3691d278-8e3f-4375-8dc0-a89910257920"], Cell[BoxData[
+     "b1eee78f-e1f9-4cb7-951b-850d2935f6d9"], Cell[BoxData[
      StyleBox["sRGB", "InlineFormula"]],ExpressionUUID->
-     "4742d06f-3693-466e-9d2b-7a3f3c2cfad5"]},
+     "051f1cfa-8406-41cf-98df-2543e4110f63"]},
    {"", Cell[BoxData[
      StyleBox["Bandwidth", "InlineFormula"]],ExpressionUUID->
-     "470f5151-a8fb-4c3f-bcfb-eecd2fa1d8b6"], Cell[BoxData[
+     "c0c29534-6825-4620-87a6-0a962857f45e"], Cell[BoxData[
      StyleBox["Automatic", "InlineFormula"]],ExpressionUUID->
-     "7b3f8f3e-6f82-4700-ac72-bd7821bf2305"]},
+     "3b9236b3-344d-4a2b-bcc6-31d44c9755c8"]},
    {"", Cell[BoxData[
      StyleBox["Neighborhood", "InlineFormula"]],ExpressionUUID->
-     "b135d19d-b94f-4ad4-a9b0-e62efd0b21ee"], Cell[BoxData[
+     "f09d5eaa-0739-440e-8fb8-23c269686603"], Cell[BoxData[
      StyleBox["All", "InlineFormula"]],ExpressionUUID->
-     "651e9c24-897d-402f-bd68-b29e9e1d477f"]},
+     "b690e3d7-e586-41df-b73b-0a44ba976a4b"]},
    {"", Cell[BoxData[
      StyleBox["Inverse", "InlineFormula"]],ExpressionUUID->
-     "ad057d08-ae5d-4fd4-b361-314e1f1da4f6"], Cell[BoxData[
+     "bded7bca-5db0-463a-8933-eb7ed4498175"], Cell[BoxData[
      StyleBox["False", "InlineFormula"]],ExpressionUUID->
-     "adc5a123-1c02-4504-afbc-e3bfcd7004f5"]}
-  }]], "2ColumnTableMod",ExpressionUUID->"21b7b339-ac77-45b8-bd9a-\
-65373e2f1233"]
+     "d231f22a-4276-4814-8ef7-e581d53ad650"]}
+  }]], "2ColumnTableMod",ExpressionUUID->"730b03ce-4ab5-455b-a95a-\
+203b373299db"]
 }, Closed]],
 
 Cell[CellGroupData[{
 
-Cell["Examples", "PrimaryExamplesSection",ExpressionUUID->"42a007a1-90d4-40ab-89dd-12f34c21ccb5"],
+Cell["Examples", "PrimaryExamplesSection",ExpressionUUID->"80998a7e-2b65-4d5d-93bb-7d3cce63b3e1"],
 
 Cell[CellGroupData[{
 
-Cell["Basic Examples", "ExampleSection",ExpressionUUID->"e804bb2c-13ad-4bc6-b29e-f29f874727f8"],
+Cell["Basic Examples", "ExampleSection",ExpressionUUID->"c38ee44b-be9d-4100-aa8d-13e3af2337f5"],
 
-Cell["Load the KoenderColor package:", "ExampleText",ExpressionUUID->"a576d2c8-fdee-475d-8541-5de438b72fd8"],
+Cell["Load the KoenderColor package:", "ExampleText",ExpressionUUID->"b6e43235-e1cb-4b63-9a6f-ac7ac6d52e5a"],
 
 Cell[BoxData[
- RowBox[{"Needs", "[", "\"\<KoenderColor`\>\"", "]"}]], "Input",ExpressionUUID->"f85c79fe-001a-418c-9414-bb5f8798418a"]
+ RowBox[{"Needs", "[", "\"\<KoenderColor`\>\"", "]"}]], "Input",ExpressionUUID->"4122c4b2-9b99-4621-8795-feb10599c05c"]
 }, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell["See Also", "SeeAlsoSection",ExpressionUUID->"16bcf23d-5ba7-489b-985c-c974851e42f1"],
+Cell["See Also", "SeeAlsoSection",ExpressionUUID->"c9552a70-cb02-4a6e-a5ad-6f6308116612"],
 
 Cell[TextData[{
  Cell[BoxData[
@@ -104,7 +104,7 @@ Cell[TextData[{
     "paclet:KoenderColor/ref/KoenderinkColorDistance"},
    "RefLink",
    BaseStyle->{"InlineFormula"}]],ExpressionUUID->
-  "d83001e2-4ebc-46e6-8218-c7584a8b329c"],
+  "3280d912-ffe1-4f60-84df-82f4508e93e8"],
  " \[FilledSmallSquare] ",
  Cell[BoxData[
   TemplateBox[{
@@ -113,7 +113,7 @@ Cell[TextData[{
     "paclet:KoenderColor/ref/KoenderinkMetricMatrix"},
    "RefLink",
    BaseStyle->{"InlineFormula"}]],ExpressionUUID->
-  "0ecb547f-0d58-422a-bfb9-10ff51576d58"],
+  "538502b1-f20a-4aeb-853f-0e95b514eb87"],
  " \[FilledSmallSquare] ",
  Cell[BoxData[
   TemplateBox[{
@@ -122,13 +122,13 @@ Cell[TextData[{
     "paclet:KoenderColor/ref/KoenderinkMetricTensor"},
    "RefLink",
    BaseStyle->{"InlineFormula"}]],ExpressionUUID->
-  "912319c6-113a-4778-b37a-7c774370ab5b"]
-}], "SeeAlso",ExpressionUUID->"8a9ff8bf-cef7-419e-b976-3ead653e75ac"]
+  "6812c13a-0318-4f69-af79-c25a409831a5"]
+}], "SeeAlso",ExpressionUUID->"f7172798-cb0b-45d5-9644-bf8a038868dd"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell["Related Guides", "MoreAboutSection",ExpressionUUID->"f0ebbc21-56fc-4694-baea-d1a7f5164e3a"],
+Cell["Related Guides", "MoreAboutSection",ExpressionUUID->"79328a34-da93-4c13-8d26-f24103219fef"],
 
 Cell[TextData[Cell[BoxData[
  TemplateBox[{
@@ -136,8 +136,8 @@ Cell[TextData[Cell[BoxData[
     TextData["KoenderColor Guide"]], "paclet:KoenderColor/guide/KoenderColor"},
   "RefLink",
   BaseStyle->{
-   "MoreAbout"}]],ExpressionUUID->"8185f2b6-fa60-4f99-a441-322b4f2f135e"]], \
-"MoreAbout",ExpressionUUID->"021fc804-40ad-48b6-8b0e-94e0b8ad036a"]
+   "MoreAbout"}]],ExpressionUUID->"1ec2e13d-5925-4288-bf06-b460ef0e8d73"]], \
+"MoreAbout",ExpressionUUID->"94b97a17-8ae9-4031-8e73-725860d597a1"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -154,7 +154,7 @@ primitive representing the Notable Qualitative Difference (NQD) region at \
 color.", "index" -> True|>|>,
 FrontEndVersion->"15.0 for Mac OS X ARM (64-bit) (July 2, 2026)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb"],
-ExpressionUUID->"5e82b095-72a2-4833-aef9-19bc7f07d7ba"
+ExpressionUUID->"7760bc40-648a-41c0-a9ae-94b9bd1a6599"
 ]
 (* End of Notebook Content *)
 
@@ -167,31 +167,31 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[587, 21, 95, 0, 70, "ContextNameCell",ExpressionUUID->"997d02ca-6456-4530-9b99-37c1d644a38f"],
+Cell[587, 21, 95, 0, 70, "ContextNameCell",ExpressionUUID->"dd1dd849-dd2a-407f-874d-e46f08e2bddc"],
 Cell[CellGroupData[{
-Cell[707, 25, 96, 0, 70, "ObjectName",ExpressionUUID->"da988ddb-52df-4d71-9925-8474be66185a"],
-Cell[806, 27, 623, 14, 70, "Usage",ExpressionUUID->"2f81b789-6db2-42d6-91f6-ca738015cf06",
+Cell[707, 25, 96, 0, 70, "ObjectName",ExpressionUUID->"5270ed48-4b7c-44bf-a79f-469b9b050752"],
+Cell[806, 27, 623, 14, 70, "Usage",ExpressionUUID->"1af4e3e5-4487-43d6-9838-d544b1fe9d50",
  CellID->982511436],
 Cell[CellGroupData[{
-Cell[1454, 45, 98, 0, 70, "NotesSection",ExpressionUUID->"dc079eb2-cc66-4752-bb1d-79071939b7ff"],
-Cell[1555, 47, 107, 0, 70, "Notes",ExpressionUUID->"c98b367e-a146-41da-8feb-9b91066afbd0"],
-Cell[1665, 49, 1345, 27, 70, "2ColumnTableMod",ExpressionUUID->"21b7b339-ac77-45b8-bd9a-65373e2f1233"]
+Cell[1454, 45, 98, 0, 70, "NotesSection",ExpressionUUID->"3882508f-b2dc-4496-b7aa-2d64ac634943"],
+Cell[1555, 47, 107, 0, 70, "Notes",ExpressionUUID->"a55784b0-ee44-4da5-84b3-7ac35798d3e5"],
+Cell[1665, 49, 1345, 27, 70, "2ColumnTableMod",ExpressionUUID->"730b03ce-4ab5-455b-a95a-203b373299db"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[3047, 81, 97, 0, 70, "PrimaryExamplesSection",ExpressionUUID->"42a007a1-90d4-40ab-89dd-12f34c21ccb5"],
+Cell[3047, 81, 97, 0, 70, "PrimaryExamplesSection",ExpressionUUID->"80998a7e-2b65-4d5d-93bb-7d3cce63b3e1"],
 Cell[CellGroupData[{
-Cell[3169, 85, 95, 0, 70, "ExampleSection",ExpressionUUID->"e804bb2c-13ad-4bc6-b29e-f29f874727f8"],
-Cell[3267, 87, 108, 0, 70, "ExampleText",ExpressionUUID->"a576d2c8-fdee-475d-8541-5de438b72fd8"],
-Cell[3378, 89, 133, 1, 70, "Input",ExpressionUUID->"f85c79fe-001a-418c-9414-bb5f8798418a"]
+Cell[3169, 85, 95, 0, 70, "ExampleSection",ExpressionUUID->"c38ee44b-be9d-4100-aa8d-13e3af2337f5"],
+Cell[3267, 87, 108, 0, 70, "ExampleText",ExpressionUUID->"b6e43235-e1cb-4b63-9a6f-ac7ac6d52e5a"],
+Cell[3378, 89, 133, 1, 70, "Input",ExpressionUUID->"4122c4b2-9b99-4621-8795-feb10599c05c"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3560, 96, 89, 0, 70, "SeeAlsoSection",ExpressionUUID->"16bcf23d-5ba7-489b-985c-c974851e42f1"],
-Cell[3652, 98, 881, 27, 70, "SeeAlso",ExpressionUUID->"8a9ff8bf-cef7-419e-b976-3ead653e75ac"]
+Cell[3560, 96, 89, 0, 70, "SeeAlsoSection",ExpressionUUID->"c9552a70-cb02-4a6e-a5ad-6f6308116612"],
+Cell[3652, 98, 881, 27, 70, "SeeAlso",ExpressionUUID->"f7172798-cb0b-45d5-9644-bf8a038868dd"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4570, 130, 97, 0, 70, "MoreAboutSection",ExpressionUUID->"f0ebbc21-56fc-4694-baea-d1a7f5164e3a"],
-Cell[4670, 132, 305, 7, 70, "MoreAbout",ExpressionUUID->"021fc804-40ad-48b6-8b0e-94e0b8ad036a"]
+Cell[4570, 130, 97, 0, 70, "MoreAboutSection",ExpressionUUID->"79328a34-da93-4c13-8d26-f24103219fef"],
+Cell[4670, 132, 305, 7, 70, "MoreAbout",ExpressionUUID->"94b97a17-8ae9-4031-8e73-725860d597a1"]
 }, Open  ]]
 }, Open  ]]
 }
