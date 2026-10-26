@@ -2,12 +2,6 @@
 
 A Wolfram Language paclet implementing the empirical three-dimensional metric field for color space described by Jan Koenderink, Andrea van Doorn, Doris I. Braun, and Karl R. Gegenfurtner (2026).
 
-<p align="center">
-  <img src="docs/preview.png" width="480" alt="KoenderColor Empirical 3D Metric Field" />
-  <br />
-  <em>The empirical 3D metric field rendered in sRGB space (reproducing Figure 8 of the paper).</em>
-</p>
-
 ## Overview
 
 Classical color metrics such as CIEDE2000 apply heuristic weighting functions layered over CIELAB. In contrast, Koenderink et al. empirically measured local regions of **Notable Qualitative Differences (NQD)** throughout the full 3D color cube on a body-centered cubic (BCC) lattice.
