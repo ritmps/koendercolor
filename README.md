@@ -116,4 +116,4 @@ wolframscript -file scripts/generate_docs.wl
 
 ## Reference
 
-* Koenderink, J., van Doorn, A., Braun, D. I., & Gegenfurtner, K. R. (2026). *An empirical three-dimensional metric field for color space*. bioRxiv preprint [doi:10.64898/2026.03.09.710376](https://doi.org/10.64898/2026.03.09.710376).
+* Jan J. Koenderink, Andrea J. van Doorn, Doris I. Braun, Karl R. Gegenfurtner; An empirical three-dimensional metric field for color space. *Journal of Vision* 2026;26(9):3. [doi:10.1167/jov.26.9.3](https://doi.org/10.1167/jov.26.9.3).

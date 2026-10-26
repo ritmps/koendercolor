@@ -1,8 +1,8 @@
 PacletObject[
   <|
     "Name" -> "KoenderColor",
-    "Version" -> "1.0.7",
-    "BuildNumber" -> "7",
+    "Version" -> "1.0.8",
+    "BuildNumber" -> "8",
     "WolframVersion" -> "13.0+",
     "Creator" -> "FXP",
     "Description" -> "Empirical 3D metric field for color space after Koenderink et al. (2026).",
